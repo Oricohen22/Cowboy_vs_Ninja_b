@@ -27,7 +27,7 @@ namespace ariel
         Team &operator=(const Team &) = delete;
         Team(Team &&) = delete;
         Team &operator=(Team &&) = delete;
-        void add(Character *character);
+        virtual void add(Character *character);
         virtual void attack(Team *enemy);
         int stillAlive();
         

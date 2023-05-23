@@ -15,7 +15,7 @@ namespace ariel
         Ninja(string name,Point location,int life,int speed);
         void move(Character *enemy);
         void slash(Character *enemy);
-        string print();
+        string print()override;
         int getSpeed();
     };
 
