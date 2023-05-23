@@ -65,9 +65,7 @@ void Team::attack(Team *enemy)
     if(!(this->leader)->isAlive()){
     this->leader = findClosestCharacter(this->leader);
     }
-    // if (!enemy->getLeader()->isAlive()) {
-    //     enemy->setLeader(enemy->findClosestCharacter(enemy->getLeader()));
-    // }
+    
 
     Ninja *ninja;
     Cowboy *cowboy;

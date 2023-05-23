@@ -57,13 +57,7 @@ string Cowboy::print()
     return "name: (C" + getName() + "), location: " + getLocation().print();
 }
 
-// void Cowboy::update_bull_number(int number)
-// {
-//     if (number > 0)
-//     {
-//         this->bullets = bullets -number;
-//     }
-// }
+
 
 int Cowboy::getBullets()
 {

@@ -18,9 +18,7 @@ void Team2::attack(Team* enemy) {
         throw runtime_error("no one in the team still alive");
     }
 
-    // if (!enemy->getLeader()->isAlive()) {
-    //     enemy->setLeader(enemy->findClosestCharacter(enemy->getLeader()));
-    // }
+    
     if(!(this->getLeader())->isAlive()){
     this->setLeader(findClosestCharacter(this->getLeader()));
     }

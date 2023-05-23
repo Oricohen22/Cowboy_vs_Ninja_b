@@ -17,6 +17,6 @@ namespace ariel
         void reload();
         void setBullet(int number);
         string print();
-        // void update_bull_number(int number);
+        
     };
 }
