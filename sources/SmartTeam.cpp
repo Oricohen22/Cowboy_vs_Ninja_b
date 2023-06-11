@@ -71,7 +71,7 @@ void SmartTeam::attack(Team* enemy)
         Ninja* ninja = dynamic_cast<Ninja*>(character);
         if (ninja != nullptr)
         {
-            Character* victim = enemy->findClosestCharacter(getLeader());
+            Character* victim = enemy->findWeakestAliveEnemy(getLeader());
             if (victim != nullptr)
             {
                 if (ninja->distance(victim) < 1)
@@ -89,7 +89,7 @@ void SmartTeam::attack(Team* enemy)
     // Check if the enemy's leader is alive and find the closest character if not
     if (!enemy->getLeader()->isAlive())
     {
-        enemy->setLeader(enemy->findClosestCharacter(enemy->getLeader()));
+        enemy->setLeader(enemy->findWeakestAliveEnemy(enemy->getLeader()));
     }
 }
 
